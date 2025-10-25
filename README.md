@@ -1,16 +1,47 @@
-# React + Vite
+# SkillSwap
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+SkillSwap is a modern skill-sharing platform where users can sign up, log in, and connect with top-rated providers to learn new skills. The app features authentication, skill listings, user profiles, and interactive UI components.
 
-Currently, two official plugins are available:
+## Purpose
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+SkillSwap helps users discover, book, and learn a variety of skills from verified providers. It is designed to be fast, secure, and user-friendly, making skill development accessible to everyone.
 
-## React Compiler
+## Live URL
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+[Live Demo](YOUR_LIVE_URL_HERE)
 
-## Expanding the ESLint configuration
+## Key Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- User authentication (Sign up, Login, Google Login, Forgot Password)
+- Protected routes for profile and booking
+- Skill listing from JSON data
+- Profile update with photo URL
+- Swiper slider for featured skills
+- AOS animations for smooth UI
+- Toast notifications for feedback
+- Responsive and modern UI with Tailwind CSS and DaisyUI
+- Top Rated Providers and How It Works sections
+- Social links in footer
+
+## NPM Packages Used
+
+- react
+- react-dom
+- react-router-dom
+- firebase
+- swiper
+- aos
+- react-hot-toast
+- tailwindcss
+- daisyui
+- react-icons
+
+## Getting Started
+
+1. Clone the repo and run `npm install`.
+2. Add your Firebase config to `.env.local`.
+3. Run `npm run dev` to start the app locally.
+
+---
+
+Feel free to contribute or suggest new features!
