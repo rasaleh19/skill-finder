@@ -19,7 +19,7 @@ export default function Home() {
 
   // Top Rated Providers (static demo)
   const topProviders = [
-    { name: "Alice", skill: "Guitar", rating: 5, image: "/vite.svg" },
+    { name: "Alice", skill: "Chess", rating: 5, image: "/vite.svg" },
     { name: "Bob", skill: "Yoga", rating: 4.9, image: "/vite.svg" },
     { name: "Carol", skill: "Coding", rating: 4.8, image: "/vite.svg" },
   ];
