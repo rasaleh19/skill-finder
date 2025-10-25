@@ -73,6 +73,7 @@ export default function Signup() {
       <form
         className="card w-full max-w-sm bg-base-200 shadow-xl p-6"
         onSubmit={handleSignup}
+        autoComplete="off"
       >
         <h2 className="text-2xl font-bold mb-4 text-center">Signup</h2>
         <div className="mb-3">
@@ -83,6 +84,7 @@ export default function Signup() {
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
+            autoComplete="off"
           />
         </div>
         <div className="mb-3">
@@ -93,6 +95,7 @@ export default function Signup() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
+            autoComplete="off"
           />
         </div>
         <div className="mb-3">
@@ -103,6 +106,7 @@ export default function Signup() {
             value={photoURL}
             onChange={(e) => setPhotoURL(e.target.value)}
             required
+            autoComplete="off"
           />
         </div>
         <div className="mb-3 relative">
@@ -113,6 +117,7 @@ export default function Signup() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
+            autoComplete="new-password"
           />
           <button
             type="button"
