@@ -40,7 +40,12 @@ export default function Signup() {
     setLoading(true);
     try {
       const res = await createUserWithEmailAndPassword(auth, email, password);
-      await updateProfile(res.user, { displayName: name, photoURL });
+      const defaultPhotoURL =
+        "https://images.unsplash.com/photo-1506744038136-46273834b3fb";
+      await updateProfile(res.user, {
+        displayName: name,
+        photoURL: photoURL || defaultPhotoURL,
+      });
       toast.success("Signup successful!");
       navigate("/");
     } catch (err) {

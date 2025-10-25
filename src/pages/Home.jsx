@@ -85,54 +85,114 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Top Rated Providers */}
-      <section className="mb-8" data-aos="fade-up">
-        <h2 className="text-2xl font-bold mb-4">Top Rated Providers</h2>
-        <div className="flex gap-6">
-          {topProviders.map((p, i) => (
-            <div
-              key={i}
-              className="card bg-base-100 shadow p-4 flex flex-col items-center"
-            >
-              <img
-                src={p.image}
-                alt={p.name}
-                className="w-16 h-16 rounded-full mb-2"
-              />
-              <span className="font-semibold">{p.name}</span>
-              <span className="text-sm">{p.skill}</span>
-              <span className="text-yellow-500">★ {p.rating}</span>
-            </div>
-          ))}
+      {/* Top Rated Providers Section */}
+      <section className="mb-8 flex flex-col items-center" data-aos="fade-up">
+        <h2 className="text-2xl font-bold mb-4 text-center">
+          Top Rated Providers
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-4xl">
+          <div className="bg-base-100 p-6 rounded-xl shadow flex flex-col items-center">
+            <img
+              src="https://randomuser.me/api/portraits/men/45.jpg"
+              alt="Provider"
+              className="w-16 h-16 rounded-full mb-2"
+            />
+            <span className="font-semibold mb-1">Alex Martin</span>
+            <span className="text-yellow-500 font-bold">★ 4.8</span>
+            <span className="text-sm text-gray-500">Guitar Lessons</span>
+          </div>
+          <div className="bg-base-100 p-6 rounded-xl shadow flex flex-col items-center">
+            <img
+              src="https://randomuser.me/api/portraits/women/68.jpg"
+              alt="Provider"
+              className="w-16 h-16 rounded-full mb-2"
+            />
+            <span className="font-semibold mb-1">Sara Hossain</span>
+            <span className="text-yellow-500 font-bold">★ 4.6</span>
+            <span className="text-sm text-gray-500">English Practice</span>
+          </div>
+          <div className="bg-base-100 p-6 rounded-xl shadow flex flex-col items-center">
+            <img
+              src="https://randomuser.me/api/portraits/men/22.jpg"
+              alt="Provider"
+              className="w-16 h-16 rounded-full mb-2"
+            />
+            <span className="font-semibold mb-1">John Doe</span>
+            <span className="text-yellow-500 font-bold">★ 4.9</span>
+            <span className="text-sm text-gray-500">Python Programming</span>
+          </div>
         </div>
       </section>
 
-      {/* How It Works */}
-      <section className="mb-8" data-aos="fade-up">
-        <h2 className="text-2xl font-bold mb-4">How It Works</h2>
-        <ol className="list-decimal ml-6">
-          <li>Browse available skills and providers</li>
-          <li>View details and ratings</li>
-          <li>Book a session with your chosen provider</li>
-          <li>Connect, learn, and rate your experience</li>
-        </ol>
+      {/* How It Works Section */}
+      <section className="mb-8 flex flex-col items-center" data-aos="fade-up">
+        <h2 className="text-2xl font-bold mb-4 text-center">How It Works</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-4xl">
+          <div className="bg-base-100 p-6 rounded-xl shadow flex flex-col items-center">
+            <span className="text-4xl mb-2">🔍</span>
+            <span className="font-semibold mb-1">Browse Skills</span>
+            <span className="text-sm text-gray-500 text-center">
+              Explore a wide range of skills and find what interests you.
+            </span>
+          </div>
+          <div className="bg-base-100 p-6 rounded-xl shadow flex flex-col items-center">
+            <span className="text-4xl mb-2">💬</span>
+            <span className="font-semibold mb-1">Connect & Book</span>
+            <span className="text-sm text-gray-500 text-center">
+              Contact providers and book sessions easily.
+            </span>
+          </div>
+          <div className="bg-base-100 p-6 rounded-xl shadow flex flex-col items-center">
+            <span className="text-4xl mb-2">🚀</span>
+            <span className="font-semibold mb-1">Learn & Grow</span>
+            <span className="text-sm text-gray-500 text-center">
+              Attend sessions, learn new skills, and track your progress.
+            </span>
+          </div>
+        </div>
       </section>
 
-      {/* Extra Section: Community Stories */}
+      {/* Testimonials Section */}
       <section className="mb-8" data-aos="fade-up">
-        <h2 className="text-2xl font-bold mb-4">Community Stories</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="card bg-base-100 shadow p-4">
-            <h3 className="font-bold mb-2">
-              "SkillSwap helped me learn guitar in just 2 months!"
-            </h3>
-            <p>- Dave, Student</p>
+        <h2 className="text-2xl font-bold mb-4 text-center">
+          What Our Users Say
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="bg-base-100 p-6 rounded-xl shadow flex flex-col items-center">
+            <img
+              src="https://randomuser.me/api/portraits/women/44.jpg"
+              alt="User"
+              className="w-16 h-16 rounded-full mb-2"
+            />
+            <p className="italic mb-2">
+              “SkillSwap helped me learn guitar from scratch. The provider was
+              super friendly and supportive!”
+            </p>
+            <span className="font-semibold">Ayesha Rahman</span>
           </div>
-          <div className="card bg-base-100 shadow p-4">
-            <h3 className="font-bold mb-2">
-              "I found a language partner and improved my English."
-            </h3>
-            <p>- Maria, Learner</p>
+          <div className="bg-base-100 p-6 rounded-xl shadow flex flex-col items-center">
+            <img
+              src="https://randomuser.me/api/portraits/men/32.jpg"
+              alt="User"
+              className="w-16 h-16 rounded-full mb-2"
+            />
+            <p className="italic mb-2">
+              “I improved my spoken English and gained confidence for job
+              interviews. Highly recommended!”
+            </p>
+            <span className="font-semibold">Imran Hossain</span>
+          </div>
+          <div className="bg-base-100 p-6 rounded-xl shadow flex flex-col items-center">
+            <img
+              src="https://randomuser.me/api/portraits/men/65.jpg"
+              alt="User"
+              className="w-16 h-16 rounded-full mb-2"
+            />
+            <p className="italic mb-2">
+              “The Python programming course was easy to follow and very
+              practical. Loved the experience!”
+            </p>
+            <span className="font-semibold">Tanvir Ahmed</span>
           </div>
         </div>
       </section>

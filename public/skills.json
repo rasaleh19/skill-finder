@@ -1,15 +1,15 @@
 [
   {
     "skillId": 1,
-    "skillName": "Beginner Guitar Lessons",
+    "skillName": "Beginner Chess Lessons",
     "providerName": "Alex Martin",
     "providerEmail": "alex@skillswap.com",
     "price": 20,
     "rating": 4.8,
     "slotsAvailable": 3,
-    "description": "Acoustic guitar classes for complete beginners.",
-    "image": "/python.jpg",
-    "category": "Music"
+    "description": "Acoustic chess classes for complete beginners.",
+    "image": "/chess.jpg",
+    "category": "Games"
   },
   {
     "skillId": 2,
@@ -20,7 +20,7 @@
     "rating": 4.6,
     "slotsAvailable": 5,
     "description": "Conversational English sessions for non-native speakers.",
-    "image": "/python.jpg",
+    "image": "/english.jpg",
     "category": "Language"
   },
   {
@@ -44,7 +44,7 @@
     "rating": 4.7,
     "slotsAvailable": 2,
     "description": "Learn the art of photography with hands-on sessions.",
-    "image": "/python.jpg",
+    "image": "/photography.jpg",
     "category": "Photography"
   },
   {
@@ -56,7 +56,7 @@
     "rating": 4.5,
     "slotsAvailable": 6,
     "description": "Basic yoga sessions to improve flexibility and wellness.",
-    "image": "/python.jpg",
+    "image": "/yoga.jpg",
     "category": "Health & Fitness"
   },
   {
@@ -68,7 +68,7 @@
     "rating": 4.6,
     "slotsAvailable": 4,
     "description": "Learn conversational French with interactive lessons.",
-    "image": "/python.jpg",
+    "image": "/french.jpg",
     "category": "Language"
   }
 ]
