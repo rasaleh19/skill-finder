@@ -17,13 +17,6 @@ export default function Home() {
     AOS.init({ duration: 800 });
   }, []);
 
-  // Top Rated Providers (static demo)
-  const topProviders = [
-    { name: "Alice", skill: "Chess", rating: 5, image: "/vite.svg" },
-    { name: "Bob", skill: "Yoga", rating: 4.9, image: "/vite.svg" },
-    { name: "Carol", skill: "Coding", rating: 4.8, image: "/vite.svg" },
-  ];
-
   return (
     <div className="max-w-6xl mx-auto p-4">
       {/* Hero Swiper Slider */}
@@ -99,7 +92,7 @@ export default function Home() {
             />
             <span className="font-semibold mb-1">Alex Martin</span>
             <span className="text-yellow-500 font-bold">★ 4.8</span>
-            <span className="text-sm text-gray-500">Guitar Lessons</span>
+            <span className="text-sm text-gray-500">Chess Lessons</span>
           </div>
           <div className="bg-base-100 p-6 rounded-xl shadow flex flex-col items-center">
             <img
